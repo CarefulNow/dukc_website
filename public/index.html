@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="dukcWebsite">
 	<head>
         <meta charset=”utf-8”> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
         <title>DUKC</title>
 
         <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
         <link rel="stylesheet" href="bower_components/pure/pure.css">
         <link rel="stylesheet" href="bower_components/pure/grids-responsive.css">
         <link rel="stylesheet" href="bower_components/pure/base.css">
-        <link href='index.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="index.css">
+
+        <script src="bower_components/angular/angular.js"></script>
+
+        <script src="js/controller.js"></script>
 	</head>
-	<body>
-		<img src="images/kayak.png" class="kayak">
+
+	<body ng-controller='PanelController'>
+		<div id="menu">
+            <div class="pure-menu pure-menu-horizontal">
+                <span class="pure-menu-heading custom-menu-heading-font">Menu</span>
+                <ul class="pure-menu-list nav nav-pills">
+                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(1), }">
+                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(1)">Home</a>
+                    </li>
+                    <li class="pure-menu-item menu-item-divided"" ng-class="{selected: isSelected(2), }">
+                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(2)">New Members</a>
+                    </li>
+                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(3), }">
+                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(3)">Kayaking</a>
+                    </li>
+                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(4), }">
+                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(4)">Trips Away</a>
+                    </li>
+                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(5), }">
+                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(5)">Committee</a>
+                    </li>
+                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(6), }">
+                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(6)">Forum</a>
+                    </li>
+                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(7), }">
+                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(7)">Contact</a>
+                    </li>
+                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(8), }">
+                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(8)">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gallery" ng-if="isSelected(8)">
+            <div class="pure-u-1">
+                <h2 class="photo-gallery-font">General Photos</h2>
+                <iframe class="photo-gallery" src="https://drive.google.com/embeddedfolderview?id=0B2i2jUWDl6V1UnNhdHMteGx1M0U#grid"></iframe>
+                </iframe>
+
+                <h2 class="photo-gallery-font">Cranafest Freestyle 2015</h2>
+                <iframe class="photo-gallery" src="https://drive.google.com/embeddedfolderview?id=0B2i2jUWDl6V1enp3OVVwQUgzVk0#grid"></iframe>
+                </iframe>
+            </div>
+        </div>
 	</body>
 </html>

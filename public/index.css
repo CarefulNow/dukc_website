@@ -1,8 +1,59 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: 'Raleway', sans-serif;
+} 
+
 body {
-	font-family: 'Montserrat Alternates', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 .kayak {
 	width: 100%;
 	height: 50%;
+}
+
+#menu {
+	font-family: 'Montserrat Alternates', sans-serif;
+	background: #000000;
+	position: relative;
+	width: 100vw;
+	top: 0ex;
+	left: 0;
+	font-size: 125%;
+	font-weight: 900;
+	color: whitesmoke;
+}
+
+
+.custom-menu-heading-font {
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-align: center;
+	color: lightgray;
+}
+
+.custom-menu-font-colour {
+	color: whitesmoke;
+}
+
+a:hover {
+	background-color: lightyellow;
+	color: darkgray;
+}
+
+
+.selected {
+	background-color: #FFCC00;
+}
+
+.photo-gallery {
+	width: 100vw;
+	height: 100vh;
+	border: 0;
+}
+
+.photo-gallery-font {
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-align: center;
+	font-size: 200%;
 }
