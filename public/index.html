@@ -19,47 +19,190 @@
 	</head>
 
 	<body ng-controller='PanelController'>
-		<div id="menu">
-            <div class="pure-menu pure-menu-horizontal">
-                <span class="pure-menu-heading custom-menu-heading-font">Menu</span>
-                <ul class="pure-menu-list nav nav-pills">
-                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(1), }">
-                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(1)">Home</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided"" ng-class="{selected: isSelected(2), }">
-                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(2)">New Members</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(3), }">
-                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(3)">Kayaking</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(4), }">
-                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(4)">Trips Away</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(5), }">
-                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(5)">Committee</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(6), }">
-                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(6)">Forum</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(7), }">
-                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(7)">Contact</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(8), }">
-                        <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(8)">Gallery</a>
-                    </li>
-                </ul>
+        <div id="layout">
+    		<div class="pure-u-1" id="header">
+                <span>Dublin Unviversity Kayak Club</span>
             </div>
-        </div>
 
-        <div id="gallery" ng-if="isSelected(8)">
-            <div class="pure-u-1">
-                <h2 class="photo-gallery-font">General Photos</h2>
-                <iframe class="photo-gallery" src="https://drive.google.com/embeddedfolderview?id=0B2i2jUWDl6V1UnNhdHMteGx1M0U#grid"></iframe>
-                </iframe>
+            <div class="pure-u-1" id="menu">
+                <div class="pure-menu pure-menu-horizontal">
+                    <span class="pure-menu-heading custom-menu-heading-font"></span>
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(1), }">
+                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(1)">Home</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided"" ng-class="{selected: isSelected(2), }">
+                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(2)">New Members</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(3), }">
+                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(3)">Kayaking</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(4), }">
+                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(4)">Trips</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(5), }">
+                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(5)">Committee</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(6), }">
+                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(6)">Forum</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(7), }">
+                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(7)">Contact</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(8), }">
+                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(8)">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-                <h2 class="photo-gallery-font">Cranafest Freestyle 2015</h2>
-                <iframe class="photo-gallery" src="https://drive.google.com/embeddedfolderview?id=0B2i2jUWDl6V1enp3OVVwQUgzVk0#grid"></iframe>
-                </iframe>
+            <div id="kayaking" ng-if="isSelected(3)">
+                <div class="pure-g committee-font">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Pool Sessions</span>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Sunday River Trips</span>
+                    </div>
+                </div>
+
+                <div class="pure-g committee-font">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>White Water</span>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Freestyle</span>
+                    </div>
+                </div>
+
+                <div class="pure-g committee-font">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Polo</span>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Slalom</span>
+                    </div>
+                </div>
+
+                <div class="pure-g committee-font">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Sea Kayaking</span>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Racing</span>
+                    </div>
+                </div>               
+            </div>
+
+            <div id="trips" ng-if="isSelected(4)">
+                <div class="pure-g committee-font">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Sunday Trips</span>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Freshers Weekend</span>
+                    </div>
+                </div>
+
+                <div class="pure-g committee-font">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Lahinch</span>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Kerry</span>
+                    </div>
+                </div>
+
+                <div class="pure-g committee-font">
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Intervarsities</span>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <span>Summer Trips</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="committee" ng-if="isSelected(5)">
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2 committee-font">
+                        <span>Captain - David Williams</span>
+                        <img class="davidw-img" src="images/committee/davidw.png">
+                        <p class="justify-left">
+                            David the 1st's Description. Billy joined the kayak club as a PHD student four years ago. During that time he has gone from a slightly confused paddler to one of the best white water paddlers in the club. He has been to the Alps (French, Italian and Solvenian) three times already and paddled the white Nile in Uganda. He is also a former Captain, Safety Officer and President of the kayak club. The rest of this is just to test that justify actually wraps the text around the image that is there becasue I don't know that it actuallly will.
+                        </p>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2 committee-font">
+                        <span>Secretary - Conall Fallon</span>
+                        <img class="conall-img" src="images/committee/conall.png">
+                        <p class="justify-right">
+                            A list of Conall's eccentricities. Billy joined the kayak club as a PHD student four years ago. During that time he has gone from a slightly confused paddler to one of the best white water paddlers in the club. He has been to the Alps (French, Italian and Solvenian) three times already and paddled the white Nile in Uganda. He is also a former Captain, Safety Officer and President of the kayak club. The rest of this is just to test that justify actually wraps the text around the image that is there becasue I don't know that it actuallly will.
+                        </p>                
+                    </div>
+                </div>
+
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2 committee-font">
+                        <span>Treasurer - Tomás McNamara</span>
+                        <img class="tomas-img" src="images/committee/tomas.png">
+                        <p class="justify-left">
+                            Tomás' Description. Billy joined the kayak club as a PHD student four years ago. During that time he has gone from a slightly confused paddler to one of the best white water paddlers in the club. He has been to the Alps (French, Italian and Solvenian) three times already and paddled the white Nile in Uganda. He is also a former Captain, Safety Officer and President of the kayak club. The rest of this is just to test that justify actually wraps the text around the image that is there becasue I don't know that it actuallly will.  
+                        </p> 
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2 committee-font">
+                        <span>Safety and Training - Jack Woods</span>
+                        <img class="conall-img" src="images/committee/jack.png">
+                        <p class="justify-right">
+                            David the 2nd's Description. Billy joined the kayak club as a PHD student four years ago. During that time he has gone from a slightly confused paddler to one of the best white water paddlers in the club. He has been to the Alps (French, Italian and Solvenian) three times already and paddled the white Nile in Uganda. He is also a former Captain, Safety Officer and President of the kayak club. The rest of this is just to test that justify actually wraps the text around the image that is there becasue I don't know that it actuallly will.
+                        </p>                
+                    </div>
+                </div>
+
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2 committee-font">
+                        <span>Outings and Equipment - David Fitzpatrick</span>
+                        <img class="davidw-img" src="images/committee/davidf.png">
+                        <p class="justify-left">
+                            David the 3rd's Description. Billy joined the kayak club as a PHD student four years ago. During that time he has gone from a slightly confused paddler to one of the best white water paddlers in the club. He has been to the Alps (French, Italian and Solvenian) three times already and paddled the white Nile in Uganda. He is also a former Captain, Safety Officer and President of the kayak club. The rest of this is just to test that justify actually wraps the text around the image that is there becasue I don't know that it actuallly will.
+                        </p> 
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2 committee-font">
+                        <span>Competitions - Cade Ryan</span>
+                        <img class="conall-img" src="images/committee/cade.png">
+                        <p class="justify-right">
+                            Cade's Description! Billy joined the kayak club as a PHD student four years ago. During that time he has gone from a slightly confused paddler to one of the best white water paddlers in the club. He has been to the Alps (French, Italian and Solvenian) three times already and paddled the white Nile in Uganda. He is also a former Captain, Safety Officer and President of the kayak club. The rest of this is just to test that justify actually wraps the text around the image that is there becasue I don't know that it actuallly will.
+                        </p>                 
+                    </div>
+                </div>
+
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2 committee-font">
+                        <span>PRO - Mark Connolly</span>
+                        <img class="davidw-img" src="images/committee/mark.png">
+                        <p class="justify-left">
+                           Mark's description. Mark is almost a stereotypical cavan man. Billy joined the kayak club as a PHD student four years ago. During that time he has gone from a slightly confused paddler to one of the best white water paddlers in the club. He has been to the Alps (French, Italian and Solvenian) three times already and paddled the white Nile in Uganda. He is also a former Captain, Safety Officer and President of the kayak club. The rest of this is just to test that justify actually wraps the text around the image that is there becasue I don't know that it actuallly will.
+                        </p>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2 committee-font">
+                        <span>President - Billy Brazil</span>
+                        <img class="billy-img" src="images/committee/billy.png">
+                        <p class="justify-right">
+                            Billy joined the kayak club as a PHD student four years ago. During that time he has gone from a slightly confused paddler to one of the best white water paddlers in the club. He has been to the Alps (French, Italian and Solvenian) three times already and paddled the white Nile in Uganda. He is also a former Captain, Safety Officer and President of the kayak club. The rest of this is just to test that justify actually wraps the text around the image that is there becasue I don't know that it actuallly will. 
+                        </p> 
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery" ng-if="isSelected(8)">
+                <div class="pure-u-1">
+                    <h2 class="photo-gallery-font">General Photos</h2>
+                    <iframe class="photo-gallery" src="https://drive.google.com/embeddedfolderview?id=0B2i2jUWDl6V1UnNhdHMteGx1M0U#grid"></iframe>
+                    </iframe>
+
+                    <h2 class="photo-gallery-font">Cranafest Freestyle 2015</h2>
+                    <iframe class="photo-gallery" src="https://drive.google.com/embeddedfolderview?id=0B2i2jUWDl6V1enp3OVVwQUgzVk0#grid"></iframe>
+                    </iframe>
+                </div>
             </div>
         </div>
 	</body>

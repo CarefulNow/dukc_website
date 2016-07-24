@@ -17,7 +17,7 @@ body {
 	font-family: 'Montserrat Alternates', sans-serif;
 	background: #000000;
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	top: 0ex;
 	left: 0;
 	font-size: 125%;
@@ -25,6 +25,25 @@ body {
 	color: whitesmoke;
 }
 
+#layout {
+	width: 100%;
+	height: 100vh;
+}
+
+#header {
+	font-family: 'Montserrat Alternates', sans-serif;
+	background: #000000;
+	position: relative;
+	width: 100%;
+	top: 0ex;
+	left: 0;
+	font-size: 250%;
+	font-weight: 900;
+	color: #FFCC00;
+	text-align: center;
+	padding-bottom: 2vh;
+	padding-top: 2vh;
+}
 
 .custom-menu-heading-font {
 	font-family: 'Montserrat Alternates', sans-serif;
@@ -41,13 +60,21 @@ a:hover {
 	color: darkgray;
 }
 
-
 .selected {
 	background-color: #FFCC00;
 }
 
+.committee-font {
+	padding-top: 1em;
+	font-size: 200%;
+	text-align: center;
+}
+
 .photo-gallery {
-	width: 100vw;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 100%;
 	height: 100vh;
 	border: 0;
 }
@@ -56,4 +83,58 @@ a:hover {
 	font-family: 'Montserrat Alternates', sans-serif;
 	text-align: center;
 	font-size: 200%;
+}
+
+.justify-right {
+	text-align: justify;
+	font-size: 60%;
+	padding-bottom: 0.5em;
+	margin-right: 1.5em;
+	margin-left: 2em;
+}
+
+.justify-left {
+	text-align: justify;
+	font-size: 60%;
+	padding-bottom: 0.5em;
+	margin-left: 1.5em;
+	margin-right: 2em;
+}
+
+
+
+
+.davidw-img {
+	width: 50%;
+	float: left;
+	margin-left: 1em;
+	padding-right: 0.5em;
+}
+
+.conall-img {
+	width: 45%;
+	float: right;
+	margin-right: 1em;
+	padding-left: 0.5em;
+}
+
+.tomas-img {
+	float: left;
+	margin-left: 1em;
+	width: 55%;
+	padding-right: 0.5em;
+}
+
+.davidf-img {
+	width: 35%;
+	float: left;
+	margin-left: 1em;
+	padding-right: 0.5em;
+}
+
+.billy-img {
+	width: 50%;
+	float: right;
+	margin-right: 1em;
+	padding-left: 0.5em;	
 }
