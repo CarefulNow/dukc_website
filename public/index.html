@@ -19,42 +19,56 @@
 	</head>
 
 	<body ng-controller='PanelController'>
-        <div id="layout">
-    		<div class="pure-u-1" id="header">
+            <div class="pure-u-1" id="header">
                 <span>Dublin Unviversity Kayak Club</span>
             </div>
 
-            <div class="pure-u-1" id="menu">
-                <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
-                    <span class="pure-menu-heading custom-menu-heading-font"></span>
+            <div class="pure-u-1 custom-menu-wrapper" id="menu">
+                <div class="pure-menu custom-menu-top">
+                    <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+                </div>
+
+                <div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
+                    
                     <ul class="pure-menu-list">
-                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(1), }">
-                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(1)">Home</a>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#" class="pure-menu-link" ng-class="{selected: isSelected(1), }" ng-click="selectTab(1)">Home</a>
                         </li>
-                        <li class="pure-menu-item menu-item-divided"" ng-class="{selected: isSelected(2), }">
-                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(2)">New Members</a>
+                        <li class="pure-menu-item menu-item-divided"">
+                            <a href="#" class="pure-menu-link" ng-class="{selected: isSelected(2), }" ng-click="selectTab(2)">New Members</a>
                         </li>
-                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(3), }">
-                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(3)">Kayaking</a>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#" class="pure-menu-link" ng-class="{selected: isSelected(3), }" ng-click="selectTab(3)">Kayaking</a>
                         </li>
-                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(4), }">
-                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(4)">Trips</a>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#" class="pure-menu-link" ng-class="{selected: isSelected(4), }" ng-click="selectTab(4)">Trips</a>
                         </li>
-                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(5), }">
-                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(5)">Committee</a>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#" class="pure-menu-link" ng-class="{selected: isSelected(5), }" ng-click="selectTab(5)">Committee</a>
                         </li>
-                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(6), }">
-                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(6)">Forum</a>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#" class="pure-menu-link" ng-class="{selected: isSelected(6), }" ng-click="selectTab(6)">Forum</a>
                         </li>
-                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(7), }">
-                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(7)">Contact</a>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#" class="pure-menu-link" ng-class="{selected: isSelected(7), }" ng-click="selectTab(7)">Contact</a>
                         </li>
-                        <li class="pure-menu-item menu-item-divided" ng-class="{selected: isSelected(8), }">
-                            <a href="#" class="pure-menu-link custom-menu-font-colour" ng-click="selectTab(8)">Gallery</a>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#" class="pure-menu-link" ng-class="{selected: isSelected(8), }" ng-click="selectTab(8)">Gallery</a>
                         </li>
                     </ul>
+    
                 </div>
             </div>
+        <script>
+            (function (window, document) {
+                document.getElementById('toggle').addEventListener('click', function (e) {
+                    document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+                    document.getElementById('toggle').classList.toggle('x');
+                });
+            })(this, this.document);
+        </script>
+
+        <div id="layout">
 
             <div id="kayaking" ng-if="isSelected(3)">
                 <div class="pure-g committee-font">
