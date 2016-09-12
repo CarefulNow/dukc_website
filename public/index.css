@@ -13,6 +13,11 @@ body {
 	height: 50%;
 }
 
+.highlight {
+	font-weight: bold;
+	color: #FFCC00;
+}
+
 #menu {
 	font-family: 'Montserrat Alternates', sans-serif;
 	background: #000000;
@@ -41,8 +46,12 @@ body {
 	font-weight: 900;
 	color: #FFCC00;
 	text-align: center;
-	padding-bottom: 2vh;
-	padding-top: 2vh;
+	padding-top: 0.5em;
+}
+
+ul{
+	width: 100%;
+	margin: 0 auto;
 }
 
 .custom-menu-heading-font {
@@ -103,7 +112,9 @@ a:hover {
 	margin-right: 2em;
 }
 
-
+.contact-img {
+	margin: auto;
+}
 
 
 .davidw-img {
@@ -165,7 +176,7 @@ a:hover {
 .custom-menu-top {
     position: relative;
     padding-top: .5em;
-    padding-bottom: .5em;
+    padding-bottom: 1.5em;
     overflow-x: hidden;
 }
 
