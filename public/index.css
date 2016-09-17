@@ -49,6 +49,64 @@ body {
 	padding-top: 0.5em;
 }
 
+.mapheading {
+	text-align: center;
+	font-size: 200%;
+	padding-bottom: 0.5em;
+}
+
+.maptext {
+	text-align: justify;
+	padding-bottom: 0.5em;
+	margin-left: 2em;
+	margin-right: 1.5em;
+}
+
+.home {
+	margin-left: 1.5em;
+	margin-right: 2em;
+	padding-bottom: 0.5em;
+	text-align: justify;
+}
+
+.map {
+	border: 0;
+	display: block;
+	margin: 0 auto;
+	margin-right: 1.5em;
+	margin-left: 2em;
+	padding-bottom: 0.5em;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.newmembers {
+	text-align: justify;
+	font-size: 105%;
+	margin: 2em;
+}
+
+.newmemberslist {
+	text-align: justify;
+	font-size: 105%;
+	margin-left: 2em;
+	margin-right: 2em;
+	width: 70%;
+}
+
+.newmemberslistheader {
+	text-align: justify;
+	font-size: 105%;
+	margin-left: 2em;
+	margin-right: 2em;
+	width: 70%;
+	font-weight: bolder;
+}
+
 ul{
 	width: 100%;
 	margin: 0 auto;
@@ -96,6 +154,11 @@ a:hover {
 	font-size: 200%;
 }
 
+.heading-font {
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-align: center;
+}
+
 .justify-right {
 	text-align: justify;
 	font-size: 60%;
@@ -138,7 +201,7 @@ a:hover {
 	padding-right: 0.5em;
 }
 
-.davidf-img {
+.chris-img {
 	width: 35%;
 	float: left;
 	margin-left: 1em;
