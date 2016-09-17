@@ -13,6 +13,11 @@ body {
 	height: 50%;
 }
 
+.highlight {
+	font-weight: bold;
+	color: #FFCC00;
+}
+
 #menu {
 	font-family: 'Montserrat Alternates', sans-serif;
 	background: #000000;
@@ -41,8 +46,70 @@ body {
 	font-weight: 900;
 	color: #FFCC00;
 	text-align: center;
-	padding-bottom: 2vh;
-	padding-top: 2vh;
+	padding-top: 0.5em;
+}
+
+.mapheading {
+	text-align: center;
+	font-size: 200%;
+	padding-bottom: 0.5em;
+}
+
+.maptext {
+	text-align: justify;
+	padding-bottom: 0.5em;
+	margin-left: 2em;
+	margin-right: 1.5em;
+}
+
+.home {
+	margin-left: 1.5em;
+	margin-right: 2em;
+	padding-bottom: 0.5em;
+	text-align: justify;
+}
+
+.map {
+	border: 0;
+	display: block;
+	margin: 0 auto;
+	margin-right: 1.5em;
+	margin-left: 2em;
+	padding-bottom: 0.5em;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.newmembers {
+	text-align: justify;
+	font-size: 105%;
+	margin: 2em;
+}
+
+.newmemberslist {
+	text-align: justify;
+	font-size: 105%;
+	margin-left: 2em;
+	margin-right: 2em;
+	width: 70%;
+}
+
+.newmemberslistheader {
+	text-align: justify;
+	font-size: 105%;
+	margin-left: 2em;
+	margin-right: 2em;
+	width: 70%;
+	font-weight: bolder;
+}
+
+ul{
+	width: 100%;
+	margin: 0 auto;
 }
 
 .custom-menu-heading-font {
@@ -53,6 +120,7 @@ body {
 
 .custom-menu-font-colour {
 	color: whitesmoke;
+	font-size: 82%;
 }
 
 a:hover {
@@ -61,7 +129,8 @@ a:hover {
 }
 
 .selected {
-	background-color: #FFCC00;
+	font-style: italic; 
+	color: #FFCC00;
 }
 
 .committee-font {
@@ -85,6 +154,11 @@ a:hover {
 	font-size: 200%;
 }
 
+.heading-font {
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-align: center;
+}
+
 .justify-right {
 	text-align: justify;
 	font-size: 60%;
@@ -101,7 +175,9 @@ a:hover {
 	margin-right: 2em;
 }
 
-
+.contact-img {
+	margin: auto;
+}
 
 
 .davidw-img {
@@ -125,7 +201,7 @@ a:hover {
 	padding-right: 0.5em;
 }
 
-.davidf-img {
+.chris-img {
 	width: 35%;
 	float: left;
 	margin-left: 1em;
@@ -138,3 +214,161 @@ a:hover {
 	margin-right: 1em;
 	padding-left: 0.5em;	
 }
+
+
+
+
+
+
+
+.custom-menu-wrapper {
+    background-color: #000000;
+    margin-bottom: 2.5em;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.custom-menu {
+    display: inline-block;
+    font-size: 83%;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+
+.custom-menu-top {
+    position: relative;
+    padding-top: .5em;
+    padding-bottom: 1.5em;
+    overflow-x: hidden;
+}
+
+.custom-menu-brand {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.custom-menu-toggle {
+    width: 44px;
+    height: 44px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    display: none;
+}
+
+.custom-menu-toggle .bar {
+    background-color: #FFCC00;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 22px;
+    right: 12px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-menu-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-menu-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-menu-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.custom-menu-screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    height: 3em;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.custom-menu-tucked .custom-menu-screen {
+    -webkit-transform: translateY(-44px);
+    -moz-transform: translateY(-44px);
+    -ms-transform: translateY(-44px);
+    transform: translateY(-44px);
+}
+
+@media (max-width: 62em) {
+
+    .custom-menu {
+        display: block;
+    }
+
+    .custom-menu-toggle {
+        display: block;
+        display: none\9;
+    }
+
+    .custom-menu-bottom {
+        position: absolute;
+        width: 100%;
+        border-top: 1px solid #eee;
+        background-color: #000000\9;
+        z-index: 100;
+    }
+
+    .custom-menu-bottom .pure-menu-link {
+        opacity: 1;
+        color: #000000;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    .custom-menu-bottom.custom-menu-tucked .pure-menu-link {
+        -webkit-transform: translateX(-140px);
+        -moz-transform: translateX(-140px);
+        -ms-transform: translateX(-140px);
+        transform: translateX(-140px);
+        opacity: 0;
+        opacity: 1\9;
+    }
+
+    .pure-menu-horizontal.custom-menu-tucked {
+        z-index: -1;
+        top: 45px;
+        position: absolute;
+        overflow: hidden;
+    }
+
+}
+
+
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
